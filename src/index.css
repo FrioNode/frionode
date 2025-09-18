@@ -6,78 +6,71 @@
 
 @layer base {
   :root {
-    /* Your original colors converted to HSL */
-    --background: 249 250 251; /* #f9fafb */
-    --foreground: 31 41 55; /* #1f2937 */
-    --card: 255 255 255; /* #ffffff */
-    --card-foreground: 31 41 55;
+    /* Original colors exactly as specified */
+    --background: 210 20% 98%; /* #f9fafb */
+    --foreground: 220 26% 14%; /* #1f2937 */
+    --card: 0 0% 100%; /* #ffffff */
+    --card-foreground: 220 26% 14%;
     
-    /* Your original brand colors */
-    --primary: 59 130 246; /* #3b82f6 - your blue */
-    --primary-foreground: 255 255 255;
-    --secondary: 99 102 241; /* #6366f1 - your indigo */
-    --secondary-foreground: 255 255 255;
+    /* Original brand colors */
+    --primary: 217 91% 60%; /* #3b82f6 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 243 83% 67%; /* #6366f1 */
+    --secondary-foreground: 0 0% 100%;
     
-    /* Your original UI colors */
-    --muted: 241 245 249; /* #f1f5f9 */
-    --muted-foreground: 107 114 128;
-    --accent: 241 245 249;
-    --accent-foreground: 31 41 55;
+    /* Original UI colors */
+    --muted: 210 40% 96%; /* #f1f5f9 */
+    --muted-foreground: 220 9% 46%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 220 26% 14%;
     
-    /* Your timeline colors */
-    --timeline-bg: 241 245 249; /* #f1f5f9 */
-    --timeline-line: 59 130 246; /* #3b82f6 */
+    /* Original timeline colors */
+    --timeline-bg: 210 40% 96%; /* #f1f5f9 */
+    --timeline-line: 217 91% 60%; /* #3b82f6 */
     
     /* Standard UI */
-    --border: 229 231 235;
-    --input: 229 231 235;
-    --ring: 59 130 246;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    /* Your original dark theme colors */
-    --background: 17 24 39; /* #111827 */
-    --foreground: 229 231 235; /* #e5e7eb */
-    --card: 31 41 55; /* #1f2937 */
-    --card-foreground: 229 231 235;
+    /* Original dark theme colors */
+    --background: 220 26% 14%; /* #111827 */
+    --foreground: 220 13% 91%; /* #e5e7eb */
+    --card: 220 26% 18%; /* #1f2937 */
+    --card-foreground: 220 13% 91%;
     
-    /* Your dark brand colors */
-    --primary: 96 165 250; /* #60a5fa */
-    --primary-foreground: 17 24 39;
-    --secondary: 99 102 241;
-    --secondary-foreground: 229 231 235;
+    /* Original dark brand colors */
+    --primary: 213 93% 68%; /* #60a5fa */
+    --primary-foreground: 220 26% 14%;
+    --secondary: 243 83% 67%;
+    --secondary-foreground: 220 13% 91%;
     
-    /* Your dark UI colors */
-    --muted: 55 65 81;
-    --muted-foreground: 156 163 175;
-    --accent: 55 65 81;
-    --accent-foreground: 229 231 235;
+    /* Original dark UI colors */
+    --muted: 220 9% 46%;
+    --muted-foreground: 220 5% 65%;
+    --accent: 220 9% 46%;
+    --accent-foreground: 220 13% 91%;
     
-    /* Your dark timeline */
-    --timeline-bg: 26 35 49; /* #1a2331 */
-    --timeline-line: 96 165 250;
+    /* Original dark timeline */
+    --timeline-bg: 212 30% 15%; /* #1a2331 */
+    --timeline-line: 213 93% 68%;
     
     /* Dark standard UI */
-    --border: 75 85 99;
-    --input: 75 85 99;
-    --ring: 96 165 250;
+    --border: 220 13% 28%;
+    --input: 220 13% 28%;
+    --ring: 213 93% 68%;
   }
 }
 

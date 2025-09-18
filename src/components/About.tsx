@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, FileText, Code } from "lucide-react";
+import { Github, Linkedin, Twitter, MessageCircle, Code } from "lucide-react";
 
 export const About = () => {
   return (
@@ -49,8 +49,8 @@ export const About = () => {
             </a>
             </Button>
             <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">
-            <a href="https://frionode.com/resume.pdf" target="_blank" rel="noopener noreferrer">
-            <FileText className="h-4 w-4" />
+            <a href="https://t.me/frionode" target="_blank" rel="noopener noreferrer">
+            <MessageCircle className="h-4 w-4" />
             </a>
             </Button>
             <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">

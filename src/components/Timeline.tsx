@@ -7,20 +7,23 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    period: "2003-2006",
-    description: "Completed Secondary School at XYZ High School."
+    period: "2024-Present",
+    description: "Computer tutor and web maintainer at Talanta Africa Football Academy"
+  },
+  { period: "2022-2022",
+    description: "Data analysis at Kenya Master Health Facilities - API interration and repot generation using python and JavaSript"
   },
   {
-    period: "2007-2011", 
-    description: "Attended University, studied Computer Science."
+  period: "2020-2023",
+  description: "Part-time Junior developer (back-end) nodejs at KrakinzLab (Nakuru-KE)."
   },
   {
-    period: "2012-Present",
-    description: "Worked at ABC Company as a JavaScript Developer."
+    period: "2019-2023",
+    description: "Attended Rongo University (Kenya), Studied Bachelor of Science in Computer."
   },
   {
-    period: "2023-Present",
-    description: "Freelance full-stack JavaScript development."
+    period: "2015-2018",
+    description: "Attended Maiella Township Secondary School and attained a Secondary certificate with a GPA of 49 point, C+ (plus)"
   }
 ];
 

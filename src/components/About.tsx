@@ -33,25 +33,39 @@ export const About = () => {
             </div>
             
             <div className="flex justify-center lg:justify-start gap-4 mb-6">
-              <Button variant="outline" size="sm" className="hover:scale-110 transition-transform">
-                <Github className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="sm" className="hover:scale-110 transition-transform">
-                <Linkedin className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="sm" className="hover:scale-110 transition-transform">
-                <Twitter className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="sm" className="hover:scale-110 transition-transform">
-                <FileText className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="sm" className="hover:scale-110 transition-transform">
-                <Code className="h-4 w-4" />
-              </Button>
+            <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">
+            <a href="https://github.com/frionode" target="_blank" rel="noopener noreferrer">
+            <Github className="h-4 w-4" />
+            </a>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">
+            <a href="https://linkedin.com/in/frionode" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="h-4 w-4" />
+            </a>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">
+            <a href="https://x.com/frionode" target="_blank" rel="noopener noreferrer">
+            <Twitter className="h-4 w-4" />
+            </a>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">
+            <a href="https://frionode.com/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <FileText className="h-4 w-4" />
+            </a>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="hover:scale-110 transition-transform">
+            <a href="https://codepen.io/frionode" target="_blank" rel="noopener noreferrer">
+            <Code className="h-4 w-4" />
+            </a>
+            </Button>
             </div>
             
-            <Button className="shadow-glow hover:shadow-portfolio-lg transition-all duration-300">
-              Download CV
+            <Button
+            asChild className="shadow-glow hover:shadow-portfolio-lg transition-all duration-300"
+            >
+            <a href="../cv.pdf" download>
+            Download CV
+            </a>
             </Button>
           </div>
         </div>

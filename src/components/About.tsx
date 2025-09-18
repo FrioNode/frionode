@@ -63,7 +63,7 @@ export const About = () => {
             <Button
             asChild className="shadow-glow hover:shadow-portfolio-lg transition-all duration-300"
             >
-            <a href="../cv.pdf" download>
+            <a href="../resume.pdf" download>
             Download CV
             </a>
             </Button>

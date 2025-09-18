@@ -26,26 +26,25 @@ const timelineEvents: TimelineEvent[] = [
 
 export const Timeline = () => {
   return (
-    <aside className="w-1/5 min-w-[300px] bg-timeline-bg border-r border-border overflow-y-auto sticky top-0 h-screen">
-      <div className="p-8">
-        <h3 className="text-lg font-semibold text-primary mb-8">Career Timeline</h3>
+    <aside className="w-1/5 min-w-[320px] bg-timeline-bg border-r border-border overflow-y-auto sticky top-0 h-screen">
+      <div className="p-6">
         
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-6 top-4 bottom-0 w-1 bg-timeline-line rounded-full"></div>
+          <div className="absolute left-5 top-4 bottom-0 w-1 bg-timeline-line rounded-full"></div>
           
-          {/* Timeline events */}
-          <div className="space-y-8">
+          {/* Timeline events - More spaced out */}
+          <div className="space-y-12">
             {timelineEvents.map((event, index) => (
               <div key={index} className="relative">
                 {/* Timeline dot */}
-                <div className="absolute left-4 w-5 h-5 bg-card border-4 border-timeline-line rounded-full z-10"></div>
+                <div className="absolute left-3 w-4 h-4 bg-card border-3 border-timeline-line rounded-full z-10"></div>
                 
-                {/* Event card */}
-                <Card className="ml-12 p-4 hover:shadow-portfolio-lg transition-all duration-300 hover:-translate-y-1">
-                  <div className="text-sm font-bold text-primary mb-2">{event.period}</div>
-                  <div className="text-sm text-muted-foreground leading-relaxed">{event.description}</div>
-                </Card>
+                {/* Simple event content - no fancy cards */}
+                <div className="ml-10 p-3 bg-card rounded-lg shadow-sm">
+                  <div className="text-sm font-bold text-primary mb-1">{event.period}</div>
+                  <div className="text-sm text-muted-foreground">{event.description}</div>
+                </div>
               </div>
             ))}
           </div>

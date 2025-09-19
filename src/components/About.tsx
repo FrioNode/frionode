@@ -43,13 +43,13 @@ export const About = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
               <p>
-                Hi, I'm Benson Mugwe, a passionate JavaScript developer with over 5 years of experience 
+                Hi, I'm Benson Mugwe, a passionate JavaScript developer with over 7 years of experience 
                 building modern web applications and social media bots. I specialize in the MERN stack 
                 and have extensive front and backend experience.
               </p>
               <p>
                 When I'm not coding, you can find me contributing to open source projects, writing blogs, 
-                or exploring new JavaScript technologies.
+                or exploring new JavaScript and TypeScript technologies.
               </p>
             </div>
             

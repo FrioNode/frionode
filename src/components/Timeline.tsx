@@ -11,7 +11,7 @@ const timelineEvents: TimelineEvent[] = [
     description: "Computer tutor and web maintainer at Talanta Africa Football Academy"
   },
   { period: "2022-2022",
-    description: "Data analysis at Kenya Master Health Facilities - API interration and repot generation using python and JavaSript"
+    description: "Data analysis at Kenya Master Health Facilities - API intergration and report generation"
   },
   {
   period: "2020-2023",
@@ -23,7 +23,11 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     period: "2015-2018",
-    description: "Attended Maiella Township Secondary School and attained a Secondary certificate with a GPA of 49 point, C+ (plus)"
+    description: "Attended Maiella Township Secondary School; Secondary certificate, GPA of 49 point, C+ (plus)"
+  },
+  {
+    period: "2007-2014",
+    description: "Attended Ndabibi Primary School; Kenya Certificate of Primary Education."
   }
 ];
 

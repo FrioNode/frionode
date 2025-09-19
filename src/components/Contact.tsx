@@ -51,19 +51,21 @@ export const Contact = () => {
         </Card>
         
         {/* Contact Form */}
-        <Card className="p-8">
-          <h3 className="text-2xl font-semibold text-foreground mb-8">Send a Message</h3>
-          
-          <form className="space-y-6">
-            <Input placeholder="Your Name" className="h-12" />
-            <Input type="email" placeholder="Your Email" className="h-12" />
-            <Input placeholder="Subject" className="h-12" />
-            <Textarea placeholder="Your Message" className="min-h-32 resize-none" />
-            <Button className="w-full h-12 shadow-glow hover:shadow-portfolio-lg transition-all duration-300">
-              Send Message
-            </Button>
-          </form>
-        </Card>
+      <form
+        action="https://formspree.io/f/xwpnglpb"
+        method="POST"
+        className="space-y-6" >
+        <Input name="name" placeholder="Your Name" className="h-12" required />
+        <Input name="email" type="email" placeholder="Your Email" className="h-12" required />
+        <Input name="subject" placeholder="Subject" className="h-12" />
+        <Textarea name="message" placeholder="Your Message" className="min-h-32 resize-none" required />
+
+        <Button type="submit" className="w-full h-12 shadow-glow hover:shadow-portfolio-lg transition-all duration-300">
+          Send Message
+        </Button>
+      </form>
+
+
       </div>
     </section>
   );

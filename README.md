@@ -1,73 +1,87 @@
-# Welcome to your Lovable project
+<h1 align="center">👋 Hi, I'm Benson Mugwe</h1>
+<h3 align="center">Full Stack JavaScript Developer | Web App & Bot Builder</h3>
 
-## Project info
+<p align="center">
+  <a href="https://frionode.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20Preview%20Website-Visit%20Now-blue?style=for-the-badge" alt="Live Site" />
+  </a>
+</p>
 
-**URL**: https://lovable.dev/projects/ab7802c9-7c7f-4668-9c89-56583711427a
+---
 
-## How can I edit this code?
+### 🛠️ About Me
 
-There are several ways of editing your application.
+Hi, I'm **FrioNode** – a passionate full stack JavaScript developer with a focus on:
 
-**Use Lovable**
+- 🚀 **Modern Web Applications** (MERN / Next.js / REST / GraphQL)
+- 🤖 **Bots & Automation Tools** (Discord, Telegram, Social Media)
+- 🎨 **Frontend Design** with React, Tailwind CSS, and component libraries
+- 🛠️ **Backend APIs** with Node.js, Express, TypeScript
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ab7802c9-7c7f-4668-9c89-56583711427a) and start prompting.
+I enjoy building clean, efficient, and scalable digital products with a strong focus on UX, performance, and automation.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+### ⚒️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Languages:** JavaScript, TypeScript, HTML, CSS
+- **Frontend:** React, Next.js, Tailwind CSS, ShadCN
+- **Backend:** Node.js, Express, GraphQL, REST
+- **Databases:** MongoDB, MySQL, PostgreSQL
+- **Tools:** Git, GitHub, Linux, Docker, Redis
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### 📫 Connect With Me
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<p align="left">
+  <a href="https://github.com/frionode" target="_blank">
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-@frionode-333?style=flat&logo=github" />
+  </a>
+  <a href="https://linkedin.com/in/frionode" target="_blank">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-@frionode-blue?style=flat&logo=linkedin" />
+  </a>
+  <a href="https://x.com/frionode" target="_blank">
+    <img alt="Twitter" src="https://img.shields.io/badge/Twitter-@frionode-1DA1F2?style=flat&logo=twitter" />
+  </a>
+  <a href="https://t.me/frionode" target="_blank">
+    <img alt="Telegram" src="https://img.shields.io/badge/Telegram-@frionode-0088cc?style=flat&logo=telegram" />
+  </a>
+  <a href="https://instagram.com/frionode" target="_blank">
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-@frionode-E4405F?style=flat&logo=instagram" />
+  </a>
+</p>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🧠 Projects Featured
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Check out some of the projects I've built:
 
-**Edit a file directly in GitHub**
+- **🛒 E-Commerce Platform** – MERN stack with cart, auth, and dashboard
+- **📦 Inventory Management System** – Real-time stock tracking with Redis, sockets
+- **📊 API Analytics Dashboard** – Data visualizations with Next.js + D3.js
+- **🤖 Social Bots** – Automation for Telegram, Discord, and Twitter
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### 🌐 Preview My Portfolio
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+> Click the button below to visit the live website:
 
-## What technologies are used for this project?
+<p align="center">
+  <a href="https://frionode.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/🔗%20View%20Portfolio-Online%20Now-green?style=for-the-badge" />
+  </a>
+</p>
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 📁 Repo Usage
 
-## How can I deploy this project?
+This repo contains the source code and assets for my personal developer portfolio hosted on **GitHub Pages** at:
+> [`frionode.github.io`](https://frionode.github.io)
 
-Simply open [Lovable](https://lovable.dev/projects/ab7802c9-7c7f-4668-9c89-56583711427a) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🧊 _Built with love using React, Tailwind CSS, and some caffeine._

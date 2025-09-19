@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, ClipboardList, BarChart3 } from "lucide-react";
+import { ShoppingCart, BarChart3, Bot, Database, Truck, Users } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
@@ -16,7 +16,7 @@ export const Projects = () => {
       title: "Inventory Management System",
       description:
         "Productivity app with real-time updates and team collaboration",
-      icon: <ClipboardList className="h-12 w-12" />,
+      icon: <Truck className="h-12 w-12" />,
       technologies: ["Ejs", "SQL", "Express", "Socket.io", "Redis"],
       github: "https://github.com/frionode/IMS",
     },
@@ -27,6 +27,30 @@ export const Projects = () => {
       icon: <BarChart3 className="h-12 w-12" />,
       technologies: ["Next.js", "GraphQL", "PostgreSQL", "D3.js"],
       github: "https://github.com/frionode/Analytics",
+    },
+        {
+      title: "WhatsApp Bot",
+      description:
+        "A group automation WhatsApp bot built with Node.js, Baileys and Express",
+      icon: <Bot className="h-12 w-12" />,
+      technologies: ["Baileys", "Node.js", "MongoDB", "Express"],
+      github: "https://github.com/frionode/Bloombot",
+    },
+    {
+      title: "School Management System",
+      description:
+        "A comprehensive system to manage school operations, student data, staff and academic materials.",
+      icon: <Users className="h-12 w-12" />,
+      technologies: ["Ejs", "MongoDB", "Express", "Socket.io", "Redis"],
+      github: "https://github.com/frionode/kb-758",
+    },
+    {
+      title: "Discord Bot",
+      description:
+        "A Discord bot built with Node.js, Discord.js and MongoDB",
+      icon: <Bot className="h-12 w-12" />,
+      technologies: ["Discord.js", "Node.js", "MongoDB", "Discord API"],
+      github: "https://github.com/frionode/YouTify",
     },
   ];
 

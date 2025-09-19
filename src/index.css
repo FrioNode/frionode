@@ -2,33 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Your original design system - keeping your beautiful blue theme */
-
 @layer base {
   :root {
-    /* Original colors exactly as specified */
     --background: 210 20% 98%; /* #f9fafb */
     --foreground: 220 26% 14%; /* #1f2937 */
     --card: 0 0% 100%; /* #ffffff */
     --card-foreground: 220 26% 14%;
-    
-    /* Original brand colors */
     --primary: 217 91% 60%; /* #3b82f6 */
     --primary-foreground: 0 0% 100%;
     --secondary: 243 83% 67%; /* #6366f1 */
     --secondary-foreground: 0 0% 100%;
-    
-    /* Original UI colors */
     --muted: 210 40% 96%; /* #f1f5f9 */
     --muted-foreground: 220 9% 46%;
     --accent: 210 40% 96%;
     --accent-foreground: 220 26% 14%;
-    
-    /* Original timeline colors */
     --timeline-bg: 210 40% 96%; /* #f1f5f9 */
     --timeline-line: 217 91% 60%; /* #3b82f6 */
-    
-    /* Standard UI */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
     --ring: 217 91% 60%;
@@ -45,29 +34,20 @@
   }
 
   .dark {
-    /* Original dark theme colors */
     --background: 220 26% 14%; /* #111827 */
     --foreground: 220 13% 91%; /* #e5e7eb */
     --card: 220 26% 18%; /* #1f2937 */
     --card-foreground: 220 13% 91%;
-    
-    /* Original dark brand colors */
     --primary: 213 93% 68%; /* #60a5fa */
     --primary-foreground: 220 26% 14%;
     --secondary: 243 83% 67%;
     --secondary-foreground: 220 13% 91%;
-    
-    /* Original dark UI colors */
     --muted: 220 9% 46%;
     --muted-foreground: 220 5% 65%;
     --accent: 220 9% 46%;
     --accent-foreground: 220 13% 91%;
-    
-    /* Original dark timeline */
     --timeline-bg: 212 30% 15%; /* #1a2331 */
     --timeline-line: 213 93% 68%;
-    
-    /* Dark standard UI */
     --border: 220 13% 28%;
     --input: 220 13% 28%;
     --ring: 213 93% 68%;

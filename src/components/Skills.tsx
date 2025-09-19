@@ -15,7 +15,7 @@ import {
   FileText,
 } from "lucide-react";
 
-// Skill-to-icon mapping
+// Skill-to-icon mapping #Dev FrioNode
 const skillIcons: Record<string, JSX.Element> = {
   "JavaScript (ES6+)": <FileCode className="h-4 w-4 text-primary" />,
   TypeScript: <FileCode className="h-4 w-4 text-primary" />,

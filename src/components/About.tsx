@@ -12,10 +12,19 @@ export const About = () => {
       
       <Card className="p-8 shadow-portfolio-lg">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
-          <div className="w-80 h-80 bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-lg flex items-center justify-center text-primary font-semibold text-xl">
-            Benson Mugwe
-          </div>
-          
+            <div
+              className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary bg-gradient-to-br from-primary/20 to-primary-glow/20 focus:outline-none focus:ring-0"
+              tabIndex={-1} // prevent keyboard focus
+            >
+              <img
+                src="https://i.ibb.co/xSZwdjYY/benson.jpg"
+                alt="Benson Mugwe"
+                className="object-cover w-full h-full scale-110 outline-none ring-0 focus:outline-none focus:ring-0"
+                draggable={false}
+              />
+            </div>
+
+  
           <div className="flex-1 text-center lg:text-left">
             <h3 className="text-3xl font-bold text-foreground mb-2">Benson Mugwe</h3>
             <h4 className="text-xl text-primary mb-6">Full Stack JavaScript Developer</h4>

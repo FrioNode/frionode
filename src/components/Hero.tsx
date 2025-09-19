@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="text-center py-16 mb-16">
+    <section className="text-center py-10 mb-12">
     <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">
     Full Stack JavaScript Developer
     </h1>

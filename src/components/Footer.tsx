@@ -24,7 +24,7 @@ export const Footer = () => {
     {
       name: "Twitter",
       icon: <Twitter className="h-4 w-4" />,
-      url: "https://twitter.com/frionode",
+      url: "https://x.com/frionode",
     },
     {
       name: "Facebook",

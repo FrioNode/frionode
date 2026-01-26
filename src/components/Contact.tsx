@@ -2,7 +2,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Send, Globe } from "lucide-react";
+
 
 export const Contact = () => {
   return (
@@ -30,23 +31,31 @@ export const Contact = () => {
             
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-                <Phone className="h-6 w-6" />
+                <Send className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-semibold text-foreground">Phone</h4>
-                <p className="text-muted-foreground">+254 (718) 241-545</p>
+                <h4 className="font-semibold text-foreground">Telegram</h4>
+                <a
+                  href="https://t.me/frionode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition"
+                >
+                  @frionode
+                </a>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-                <MapPin className="h-6 w-6" />
+                <Globe className="h-6 w-6" />
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Location</h4>
-                <p className="text-muted-foreground">Naivasha, Nakuru 20117</p>
+                <p className="text-muted-foreground">Earth, Galaxy</p>
               </div>
             </div>
+
           </div>
         </Card>
         

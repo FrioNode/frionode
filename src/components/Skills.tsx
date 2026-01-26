@@ -9,9 +9,7 @@ import {
   Cloud,
   GitBranch,
   TerminalSquare,
-  FileJson,
   Network,
-  Cpu,
   FileText,
 } from "lucide-react";
 

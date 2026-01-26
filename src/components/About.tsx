@@ -4,8 +4,8 @@ import { Github, Linkedin, Twitter, MessageCircle, Code } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="mb-20">
-      <div className="text-center mb-12">
+    <section id="about" className="mb-4">
+      <div className="text-center mb-4">
         <h2 className="text-4xl font-bold text-primary mb-4">About Me</h2>
         <p className="text-muted-foreground text-lg">Get to know more about my background and experience</p>
       </div>
@@ -23,8 +23,8 @@ export const About = () => {
               onBlur={e => e.currentTarget.style.outline = "none"}
             >
               <img
-                src="https://i.ibb.co/xSZwdjYY/benson.jpg"
-                alt="Benson Mugwe"
+                src="https://i.ibb.co/21tm3XdX/smallfooth.jpg"
+                alt="Frio Node"
                 className="object-cover w-full h-full scale-125"
                 draggable={false}
                 tabIndex={-1} // prevent image focus
@@ -38,14 +38,15 @@ export const About = () => {
             </div>
 
           <div className="flex-1 text-center lg:text-left">
-            <h3 className="text-3xl font-bold text-foreground mb-2">Benson Mugwe</h3>
-            <h4 className="text-xl text-primary mb-6">Full Stack JavaScript Developer</h4>
+            <h3 className="text-3xl font-bold text-foreground mb-2">Frio Node</h3>
+            <h4 className="text-xl text-primary mb-6">Backend Developer with DevOps experience</h4>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
               <p>
-                Hi, I'm Benson Mugwe, a passionate JavaScript developer with over 7 years of experience 
-                building modern web applications and social media bots. I specialize in the MERN stack 
-                and have extensive front and backend experience.
+                Hi, I’m Frio Node, a backend-focused TypeScript and JavaScript developer with 7+ 
+                years of experience building reliable web applications and automation systems. 
+                I specialize in secure APIs, CRUD systems, and server-side logic, and I don’t 
+                just write code — I deploy it, monitor it, and make sure it keeps working
               </p>
               <p>
                 When I'm not coding, you can find me contributing to open source projects, writing blogs, 
@@ -84,7 +85,7 @@ export const About = () => {
             <Button
             asChild className="shadow-glow hover:shadow-portfolio-lg transition-all duration-300"
             >
-            <a href="/Resume_Benson_Mugwe.pdf" download>
+            <a href="/FrioNode.pdf" download>
             Download CV
             </a>
             </Button>

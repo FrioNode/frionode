@@ -7,27 +7,23 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    period: "2024-Present",
-    description: "Computer tutor and web maintainer at Talanta Africa Football Academy"
+    period: "2024-2025",
+    description: "In-person Computer Tutor and web maintainer Community Based Organization."
   },
   { period: "2022-2022",
-    description: "Data analysis at Kenya Master Health Facilities - API intergration and report generation"
+    description: "Data analysis at Master Health Facilities - API intergration and report generation (Python, JavaScript)."
   },
   {
-  period: "2020-2023",
-  description: "Part-time Junior developer (back-end) nodejs at KrakinzLab (Nakuru-KE)."
+  period: "2020-2024",
+  description: "Part-time developer (back-end) nodejs at KrakinzLab. - Whatsapp bots and automation systems."
   },
   {
-    period: "2019-2023",
-    description: "Attended Rongo University (Kenya), Studied Bachelor of Science in Computer."
+    period: "2019-2024",
+    description: "University Education, Studied Bachelor of Science in Computer - Attained GPA: 2.0/4.0"
   },
   {
     period: "2015-2018",
-    description: "Attended Maiella Township Secondary School; Secondary certificate, GPA of 49 point, C+ (plus)"
-  },
-  {
-    period: "2007-2014",
-    description: "Attended Ndabibi Primary School; Kenya Certificate of Primary Education."
+    description: "High School education, Completed Secondary education - Attained GPA: 3.25/5.0"
   }
 ];
 

@@ -3,7 +3,6 @@ import {
   Github,
   Linkedin,
   Twitter,
-  FileText,
   Facebook,
   Instagram,
   Send,
@@ -69,7 +68,7 @@ export const Footer = () => {
         </div>
 
         <p className="text-muted-foreground">
-          © 2025 FrioNode Portfolio. All rights reserved.
+          © 2026 FrioNode Portfolio. All rights reserved.
         </p>
       </div>
     </footer>

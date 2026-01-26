@@ -29,12 +29,12 @@ export const Projects = () => {
       github: "https://github.com/frionode/Analytics",
     },
         {
-      title: "WhatsApp Bot",
+      title: "Luna WhatsApp Bot",
       description:
         "A group automation WhatsApp bot built with Node.js, Baileys and Express",
       icon: <Bot className="h-12 w-12" />,
       technologies: ["Baileys", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/frionode/Bloombot",
+      github: "https://github.com/frionode/Luna",
     },
     {
       title: "School Management System",

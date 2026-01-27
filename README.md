@@ -1,5 +1,5 @@
-<h1 align="center">👋 Hi, I'm Benson Mugwe</h1>
-<h3 align="center">Full Stack JavaScript Developer | Web App & Bot Builder</h3>
+<h1 align="center">👋 Hi, I'm Frio Node</h1>
+<h3 align="center">Backend JavaScript, TypeScript & Bot Builder With 7+ years of DevOps Experience</h3>
 
 <p align="center">
   <a href="https://frionode.fly.dev" target="_blank">
@@ -11,9 +11,9 @@
 
 ### 🛠️ About Me
 
-Hi, I'm **FrioNode** – a passionate full stack JavaScript developer with a focus on:
+Hi, I'm **FrioNode** – a passionate Server side developer with a focus on:
 
-- 🚀 **Modern Web Applications** (MERN / Next.js / REST / GraphQL)
+- 🚀 **Modern Web Applications** ( APIs, Next.js / REST / GraphQL)
 - 🤖 **Bots & Automation Tools** (Discord, Telegram, Social Media)
 - 🎨 **Frontend Design** with React, Tailwind CSS, and component libraries
 - 🛠️ **Backend APIs** with Node.js, Express, TypeScript
@@ -24,8 +24,7 @@ I enjoy building clean, efficient, and scalable digital products with a strong f
 
 ### ⚒️ Tech Stack
 
-- **Languages:** JavaScript, TypeScript, HTML, CSS
-- **Frontend:** React, Next.js, Tailwind CSS, ShadCN
+- **Languages:** JavaScript, TypeScript, Python
 - **Backend:** Node.js, Express, GraphQL, REST
 - **Databases:** MongoDB, MySQL, PostgreSQL
 - **Tools:** Git, GitHub, Linux, Docker, Redis

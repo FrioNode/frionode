@@ -152,8 +152,6 @@ const frionode = {
 </picture>
 </div>
 
-> ⚙️ **To enable the snake:** add [this GitHub Action](https://github.com/Platane/snk) to your `frionode` repo — generates the SVG on a schedule automatically.
-
 ---
 
 ## `$ history | grep experience`

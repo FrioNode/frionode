@@ -23,7 +23,7 @@ export const About = () => {
               onBlur={e => e.currentTarget.style.outline = "none"}
             >
               <img
-                src="https://i.ibb.co/21tm3XdX/smallfooth.jpg"
+                src="https://i.ibb.co/39YdJ4WC/103070588.jpg"
                 alt="Frio Node"
                 className="object-cover w-full h-full scale-125"
                 draggable={false}

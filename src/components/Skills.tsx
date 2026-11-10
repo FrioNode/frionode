@@ -54,11 +54,13 @@ export const Skills = () => {
       icon: <Globe className="h-6 w-6" />,
       skills: [
         "JavaScript (ES6+)",
+        "TypeScript",
         "React.js",
         "Next.js",
         "HTML5",
         "CSS3",
         "Tailwind CSS",
+        "RESTful APIs",
       ],
     },
     {
@@ -66,12 +68,10 @@ export const Skills = () => {
       icon: <Server className="h-6 w-6" />,
       skills: [
         "Node.js",
-        "TypeScript",
         "Go",
         "Python",
         "Express.js",
         "FastAPI",
-        "RESTful APIs",
         "GraphQL",
         "Git",
         "GitHub",

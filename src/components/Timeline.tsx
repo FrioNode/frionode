@@ -34,14 +34,14 @@ const timelineEvents: TimelineEvent[] = [
 
 export const Timeline = () => {
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 xl:w-80 bg-muted/50 border-r border-border sticky top-0 h-screen overflow-y-auto">
+    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 lg:self-start bg-muted/50 border-r border-border sticky top-0 max-h-screen overflow-y-auto">
       <div className="px-5 pt-6 pb-4 border-b border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">My journey</p>
         <h2 className="text-lg font-bold text-foreground mt-1">Backend, payments & automation</h2>
         <p className="text-sm text-muted-foreground mt-1">7+ years shipping real systems.</p>
       </div>
 
-      <div className="flex-1 px-5 py-6">
+      <div className="px-5 py-6">
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-4 top-2 bottom-2 w-px bg-border"></div>

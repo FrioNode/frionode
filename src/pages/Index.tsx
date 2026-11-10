@@ -9,24 +9,29 @@ import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen bg-background">
-      {/* Timeline Sidebar - desktop only, hidden on mobile */}
-      <Timeline />
+    <div className="flex flex-col min-h-screen bg-background">
+      {/* Sidebar + main content row */}
+      <div className="flex flex-1 min-h-0">
+        {/* Timeline Sidebar - desktop only, hidden on mobile */}
+        <Timeline />
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col min-w-0">
-        <Header />
-        <div className="max-w-6xl mx-auto px-4 md:px-8 w-full pt-8">
-          <main>
-            <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-          </main>
+        {/* Main Content */}
+        <div className="flex-1 flex flex-col min-w-0">
+          <Header />
+          <div className="max-w-6xl mx-auto px-4 md:px-8 w-full pt-8 flex-1">
+            <main>
+              <Hero />
+              <About />
+              <Skills />
+              <Projects />
+              <Contact />
+            </main>
+          </div>
         </div>
-        <Footer />
       </div>
+
+      {/* Footer spans the full width, below sidebar and main content */}
+      <Footer />
     </div>
   );
 };

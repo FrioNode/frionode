@@ -20,7 +20,7 @@
 
 <!-- BADGES ROW -->
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-frionode.online-00d4aa?style=for-the-badge&labelColor=0d1117)](https://frionode.online)
-[![Email](https://img.shields.io/badge/📧_Email-frionode%40gmail.com-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@gmail.com)
+[![Email](https://img.shields.io/badge/📧_Email-frionode%40frionode.online-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@frionode.online)
 [![GitHub](https://img.shields.io/badge/GitHub-frionode-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/frionode)
 [![Profile Views](https://komarev.com/ghpvc/?username=frionode&color=00d4aa&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/frionode)
 
@@ -40,7 +40,7 @@ const frionode = {
   focus       : ["REST APIs", "Automation Systems", "Server-side Logic", "DevOps"],
   currentBuild: "💳 PAL payment platform + ARC CRM",
   funFact     : "I like pizza... but I've never actually eaten pizza 🍕😂",
-  contact     : "frionode@gmail.com",
+  contact     : "frionode@frionode.online",
 };
 ```
 
@@ -105,8 +105,12 @@ const frionode = {
 | 🏥 **PulseHQ** *(private — ask me about it)* | Hospital operations dashboard: patients, beds, billing, pharmacy | `Next.js 15` `React 19` `TypeScript` `Tailwind` |
 | 🧺 **Daily Basket** *(private — ask me about it)* | Offline shop ledger — sales, debts, suppliers, margins (Android) | `Kotlin` `Jetpack Compose` `SQLite` |
 | 🏫 **School Portal** *(private — ask me about it)* | School operations: students, staff, academics | `Node.js` `Express` `MongoDB` `EJS` |
+| 🎙️ **[vscribe](https://github.com/United-DG/vscribe)** *(public)* | Video transcription API — speech to text from virtually any video source | `TypeScript` `REST API` |
+| 📱 **[cloudtext2](https://github.com/United-DG/cloudtext2)** *(public)* | SMS gateway — turn any Android phone into an SMS gateway | `TypeScript` `Android` `SMS` |
+| 🗂️ **[dev-command-centre](https://github.com/United-DG/dev-command-centre)** *(public)* | Self-hosted multi-project tracker | `JavaScript` |
+| 🤖 **[luna_connect](https://github.com/FrioNode/luna_connect)** *(public)* | Pairing for the Luna bot | `JavaScript` `WhatsApp` |
 
-> Some projects are private — contact me at frionode@gmail.com if you'd like a walkthrough or a demo.
+> Some projects are private — contact me at frionode@frionode.online if you'd like a walkthrough or a demo.
 
 </div>
 
@@ -174,7 +178,7 @@ const frionode = {
 
 [![Website](https://img.shields.io/badge/🌐-frionode.online-00d4aa?style=for-the-badge&labelColor=0d1117)](https://frionode.online)
 [![Alt Deploy](https://img.shields.io/badge/🚀-frionode.fly.dev-5865F2?style=for-the-badge&labelColor=0d1117)](https://frionode.fly.dev)
-[![Email](https://img.shields.io/badge/📧-frionode%40gmail.com-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@gmail.com)
+[![Email](https://img.shields.io/badge/📧-frionode%40frionode.online-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@frionode.online)
 [![GitHub](https://img.shields.io/badge/@frionode-181717?style=for-the-badge&logo=github)](https://github.com/frionode)
 [![Twitter/X](https://img.shields.io/badge/@frionode-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/frionode)
 [![LinkedIn](https://img.shields.io/badge/frionode-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/frionode)

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Github,
   Linkedin,
@@ -39,46 +38,34 @@ export const Footer = () => {
       name: "Telegram",
       icon: <Send className="h-4 w-4" />,
       url: "https://t.me/frionode",
-    }
+    },
   ];
 
   return (
-    <footer className="bg-card border-t border-border py-12 mt-20">
-      <div className="container mx-auto px-4 text-center">
-        <div className="text-2xl font-bold text-primary mb-6">FrioNode</div>
-
-        <div className="flex justify-center flex-wrap gap-4 mb-6">
-          {socials.map((social, index) => (
+    <footer className="w-full bg-card border-t border-border py-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 px-4 text-sm text-muted-foreground">
+        <span className="font-bold text-primary text-base shrink-0">FrioNode</span>
+        <span className="flex items-center gap-3 shrink-0">
+          {socials.map((social) => (
             <a
-              key={index}
+              key={social.name}
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
+              className="hover:text-primary transition-colors"
             >
-              <Button
-                variant="outline"
-                size="sm"
-                className="hover:scale-110 transition-transform"
-              >
-                {social.icon}
-              </Button>
+              {social.icon}
             </a>
           ))}
-        </div>
-
-        <p className="mb-2">
-          <a
-            href="mailto:frionode@gmail.com"
-            className="text-muted-foreground hover:text-primary transition"
-          >
-            frionode@gmail.com
-          </a>
-        </p>
-
-        <p className="text-muted-foreground">
-          © 2026 FrioNode Portfolio. All rights reserved.
-        </p>
+        </span>
+        <a
+          href="mailto:frionode@frionode.online"
+          className="hover:text-primary transition-colors shrink-0"
+        >
+          frionode@frionode.online
+        </a>
+        <span className="shrink-0">© 2026 FrioNode Portfolio. All rights reserved.</span>
       </div>
     </footer>
   );

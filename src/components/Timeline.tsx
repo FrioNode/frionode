@@ -34,7 +34,7 @@ const timelineEvents: TimelineEvent[] = [
 
 export const Timeline = () => {
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 lg:self-start bg-muted/50 border-r border-border sticky top-0 max-h-screen overflow-y-auto">
+    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 lg:self-start bg-card border-r border-border sticky top-0 max-h-screen overflow-y-auto">
       <div className="px-5 pt-6 pb-4 border-b border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">My journey</p>
         <h2 className="text-lg font-bold text-foreground mt-1">Backend, payments & automation</h2>
@@ -63,8 +63,8 @@ export const Timeline = () => {
         <p className="flex items-center gap-2">
           <MapPin className="h-4 w-4 shrink-0 text-primary" /> Kenya — working remotely
         </p>
-        <a href="mailto:frionode@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
-          <Mail className="h-4 w-4 shrink-0 text-primary" /> frionode@gmail.com
+        <a href="mailto:frionode@frionode.online" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
+          <Mail className="h-4 w-4 shrink-0 text-primary" /> frionode@frionode.online
         </a>
       </div>
     </aside>

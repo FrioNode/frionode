@@ -1,6 +1,20 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CreditCard, MessageSquare, Boxes, HeartPulse, ShoppingBasket, GraduationCap, Lock, Mail } from "lucide-react";
+import {
+  CreditCard,
+  MessageSquare,
+  Boxes,
+  HeartPulse,
+  ShoppingBasket,
+  GraduationCap,
+  Lock,
+  Mail,
+  Github,
+  Captions,
+  Smartphone,
+  FolderKanban,
+  Bot,
+} from "lucide-react";
 
 type Project = {
   title: string;
@@ -9,6 +23,7 @@ type Project = {
   icon: JSX.Element;
   technologies: string[];
   status: "Private" | "Public";
+  github?: string;
   highlight?: string;
 };
 
@@ -67,6 +82,42 @@ export const Projects = () => {
       icon: <GraduationCap className="h-12 w-12" />,
       technologies: ["Node.js", "Express", "MongoDB", "EJS"],
       status: "Private",
+    },
+    {
+      title: "vscribe",
+      description:
+        "A video transcription API that converts speech to text from virtually any video source.",
+      icon: <Captions className="h-12 w-12" />,
+      technologies: ["TypeScript", "REST API", "Speech-to-text"],
+      status: "Public",
+      github: "https://github.com/United-DG/vscribe",
+    },
+    {
+      title: "cloudtext2",
+      description:
+        "An SMS gateway — turn any Android phone into an SMS gateway.",
+      icon: <Smartphone className="h-12 w-12" />,
+      technologies: ["TypeScript", "Android", "SMS"],
+      status: "Public",
+      github: "https://github.com/United-DG/cloudtext2",
+    },
+    {
+      title: "dev-command-centre",
+      description:
+        "A self-hosted multi-project tracker for people who code on several things at once and refuse to manually log progress.",
+      icon: <FolderKanban className="h-12 w-12" />,
+      technologies: ["JavaScript", "Self-hosted"],
+      status: "Public",
+      github: "https://github.com/United-DG/dev-command-centre",
+    },
+    {
+      title: "luna_connect",
+      description:
+        "Pairing for the Luna bot.",
+      icon: <Bot className="h-12 w-12" />,
+      technologies: ["JavaScript", "WhatsApp"],
+      status: "Public",
+      github: "https://github.com/FrioNode/luna_connect",
     },
   ];
 
@@ -134,11 +185,19 @@ export const Projects = () => {
                 ))}
               </div>
 
-              <a href={`mailto:frionode@gmail.com?subject=${encodeURIComponent(`Private project: ${project.title}`)}`}>
-                <Button variant="outline" className="w-full">
-                  <Mail className="h-4 w-4 mr-2" /> Private — ask me about it
-                </Button>
-              </a>
+              {project.status === "Public" && project.github ? (
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full">
+                    <Github className="h-4 w-4 mr-2" /> View on GitHub
+                  </Button>
+                </a>
+              ) : (
+                <a href={`mailto:frionode@frionode.online?subject=${encodeURIComponent(`Private project: ${project.title}`)}`}>
+                  <Button variant="outline" className="w-full">
+                    <Mail className="h-4 w-4 mr-2" /> Private — ask me about it
+                  </Button>
+                </a>
+              )}
             </div>
           </Card>
         ))}

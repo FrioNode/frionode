@@ -20,7 +20,7 @@
 
 <!-- BADGES ROW -->
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-frionode.online-00d4aa?style=for-the-badge&labelColor=0d1117)](https://frionode.online)
-[![Email](https://img.shields.io/badge/📧_Email-frionode%40frionode.online-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@frionode.online)
+[![Email](https://img.shields.io/badge/📧_Email-frionode%40gmail.com-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-frionode-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/frionode)
 [![Profile Views](https://komarev.com/ghpvc/?username=frionode&color=00d4aa&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/frionode)
 
@@ -38,9 +38,9 @@ const frionode = {
   location    : "🌍 Kenya",
   experience  : "7+ years",
   focus       : ["REST APIs", "Automation Systems", "Server-side Logic", "DevOps"],
-  currentBuild: "🤖 Customer Support Bot",
+  currentBuild: "💳 PAL payment platform + ARC CRM",
   funFact     : "I like pizza... but I've never actually eaten pizza 🍕😂",
-  contact     : "frionode@frionode.online",
+  contact     : "frionode@gmail.com",
 };
 ```
 
@@ -99,12 +99,14 @@ const frionode = {
 
 | Project | Description | Stack |
 |---|---|---|
-| 🤖 **[Luna WhatsApp Bot](https://github.com/frionode/Luna)** | Group automation bot with smart commands | `Node.js` `Baileys` `MongoDB` `Express` |
-| 📊 **[API Analytics Dashboard](https://github.com/frionode/Analytics)** | Performance monitoring & visualization for APIs | `Next.js` `GraphQL` `PostgreSQL` `D3.js` |
-| 🛒 **[E-Commerce Platform](https://github.com/frionode/Ecomerce)** | Full-stack store with product & order management | `React` `Node.js` `MongoDB` `Express` |
-| 📦 **[Inventory Management System](https://github.com/frionode/IMS)** | Real-time inventory with team collaboration | `EJS` `SQL` `Express` `Socket.io` `Redis` |
-| 🏫 **[School Management System](https://github.com/frionode/kb-758)** | Comprehensive school ops & academic management | `EJS` `MongoDB` `Express` `Socket.io` |
-| 🎮 **[Discord Bot — YouTify](https://github.com/frionode/YouTify)** | Feature-rich Discord bot with MongoDB backend | `Discord.js` `Node.js` `MongoDB` |
+| 💳 **PAL** *(private — ask me about it)* | Payment platform: double-entry ledger, wallets, M-Pesa rails | `Go` `PostgreSQL` `M-Pesa` |
+| 💬 **ARC CRM** *(private — ask me about it)* | Telegram-integrated web CRM: operators, shared lead pool, payments ledger | `TypeScript` `Next.js` `PostgreSQL` `Telegram API` |
+| 📦 **[Inventory Management System](https://github.com/United-DG/IMS)** | Real-time inventory with team collaboration | `Node.js` `Express` `SQL` `Socket.io` `Redis` |
+| 🏥 **[PulseHQ](https://github.com/United-DG/pulsehq)** | Hospital operations dashboard: patients, beds, billing, pharmacy | `Next.js 15` `React 19` `TypeScript` `Tailwind` |
+| 🧺 **[Daily Basket](https://github.com/FrioNode/daily-basket)** | Offline shop ledger — sales, debts, suppliers, margins (Android) | `Kotlin` `Jetpack Compose` `SQLite` |
+| 🏫 **School Portal** *(private — ask me about it)* | School operations: students, staff, academics | `Node.js` `Express` `MongoDB` `EJS` |
+
+> Some projects are private — contact me at frionode@gmail.com if you'd like a walkthrough or a demo.
 
 </div>
 
@@ -157,10 +159,11 @@ const frionode = {
 ## `$ history | grep experience`
 
 ```
+2025–now     💳  PAL payment platform + ARC CRM (Telegram-integrated CRM)
 2024–2025  💻  Computer Tutor & Web Maintainer — Community Based Organization
 2022–2022  📊  Data Analysis & API Integration — Master Health Facilities (Python, JS)
 2020–2024  🔧  Part-time Backend Developer — KrakinzLab (WhatsApp Bots & Automation)
-2019–2024  🎓  BSc. Computer Science — GPA: 2.0/4.0
+2019–2024  🎓  Studied Computer Science at school
 ```
 
 ---
@@ -171,7 +174,7 @@ const frionode = {
 
 [![Website](https://img.shields.io/badge/🌐-frionode.online-00d4aa?style=for-the-badge&labelColor=0d1117)](https://frionode.online)
 [![Alt Deploy](https://img.shields.io/badge/🚀-frionode.fly.dev-5865F2?style=for-the-badge&labelColor=0d1117)](https://frionode.fly.dev)
-[![Email](https://img.shields.io/badge/📧-frionode%40frionode.online-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@frionode.online)
+[![Email](https://img.shields.io/badge/📧-frionode%40gmail.com-ea4335?style=for-the-badge&labelColor=0d1117)](mailto:frionode@gmail.com)
 [![GitHub](https://img.shields.io/badge/@frionode-181717?style=for-the-badge&logo=github)](https://github.com/frionode)
 [![Twitter/X](https://img.shields.io/badge/@frionode-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/frionode)
 [![LinkedIn](https://img.shields.io/badge/frionode-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/frionode)

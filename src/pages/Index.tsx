@@ -10,12 +10,12 @@ import { Footer } from "@/components/Footer";
 const Index = () => {
   return (
     <div className="flex min-h-screen bg-background">
-      {/* Timeline Sidebar - Now 1/5 width with better spacing */}
+      {/* Timeline Sidebar - desktop only, hidden on mobile */}
       <Timeline />
-      
-      {/* Main Content - 4/5 width */}
-      <div className="flex-1 flex flex-col">
-        <div className="max-w-6xl mx-auto px-8 w-full">
+
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col min-w-0">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 w-full">
           <Header />
           <main>
             <Hero />

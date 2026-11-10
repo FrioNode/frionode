@@ -1,100 +1,165 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, BarChart3, Bot, Database, Truck, Users } from "lucide-react";
+import { CreditCard, MessageSquare, Boxes, HeartPulse, ShoppingBasket, GraduationCap, Lock, Github, Mail } from "lucide-react";
+
+type Project = {
+  title: string;
+  description: string;
+  image?: string;
+  icon: JSX.Element;
+  technologies: string[];
+  status: "Private" | "Public";
+  github?: string;
+  highlight?: string;
+};
 
 export const Projects = () => {
-  const projects = [
+  const projects: Project[] = [
     {
-      title: "E-Commerce Platform",
+      title: "PAL — Payment Platform",
       description:
-        "Full-stack e-commerce solution with React, Node.js, and MongoDB",
-      icon: <ShoppingCart className="h-12 w-12" />,
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/frionode/Ecomerce",
+        "A payment system I'm building from the ground up: double-entry ledger, wallets, and M-Pesa rails (STK + B2C), with reconciliation so no money ever disappears into a black hole. API-first — the API works fully on its own.",
+      image: "/images/project-pal.png",
+      icon: <CreditCard className="h-12 w-12" />,
+      technologies: ["Go", "PostgreSQL", "M-Pesa", "REST APIs"],
+      status: "Private",
+      highlight: "Current focus",
+    },
+    {
+      title: "ARC CRM",
+      description:
+        "Telegram-integrated web CRM: operators run customer chats across multiple Telegram accounts, with a shared lead pool, leads-to-clients pipeline, and a double-entry ledger for manual payments. Built for teams that live in Telegram.",
+      image: "/images/project-crm.png",
+      icon: <MessageSquare className="h-12 w-12" />,
+      technologies: ["TypeScript", "Next.js", "Fastify", "PostgreSQL", "Telegram API"],
+      status: "Private",
+      highlight: "In production",
     },
     {
       title: "Inventory Management System",
       description:
-        "Productivity app with real-time updates and team collaboration",
-      icon: <Truck className="h-12 w-12" />,
-      technologies: ["Ejs", "SQL", "Express", "Socket.io", "Redis"],
-      github: "https://github.com/frionode/IMS",
+        "Real-time inventory with team collaboration: stock tracking and reporting, low-stock alerts, transaction history, and a dashboard with visual analytics.",
+      image: "/images/project-ims.png",
+      icon: <Boxes className="h-12 w-12" />,
+      technologies: ["Node.js", "Express", "SQL", "Socket.io", "Redis"],
+      status: "Public",
+      github: "https://github.com/United-DG/IMS",
     },
     {
-      title: "API Analytics Dashboard",
+      title: "PulseHQ — Hospital Operations",
       description:
-        "Monitoring and visualization tool for API performance metrics",
-      icon: <BarChart3 className="h-12 w-12" />,
-      technologies: ["Next.js", "GraphQL", "PostgreSQL", "D3.js"],
-      github: "https://github.com/frionode/Analytics",
-    },
-        {
-      title: "Luna WhatsApp Bot",
-      description:
-        "A group automation WhatsApp bot built with Node.js, Baileys and Express",
-      icon: <Bot className="h-12 w-12" />,
-      technologies: ["Baileys", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/frionode/Luna",
+        "A hospital administration dashboard: patient management, admissions and bed tracking, billing, pharmacy inventory, and KPIs with occupancy charts and alerts.",
+      image: "/images/project-pulsehq.png",
+      icon: <HeartPulse className="h-12 w-12" />,
+      technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS"],
+      status: "Public",
+      github: "https://github.com/United-DG/pulsehq",
     },
     {
-      title: "School Management System",
+      title: "Daily Basket",
       description:
-        "A comprehensive system to manage school operations, student data, staff and academic materials.",
-      icon: <Users className="h-12 w-12" />,
-      technologies: ["Ejs", "MongoDB", "Express", "Socket.io", "Redis"],
-      github: "https://github.com/frionode/kb-758",
+        "An offline shop ledger for a small retail business — sales, debts, suppliers and per-product margins — as a native Android app. No permissions at all, not even internet; everything lives in one SQLite database on the phone.",
+      icon: <ShoppingBasket className="h-12 w-12" />,
+      technologies: ["Kotlin", "Jetpack Compose", "SQLite", "Android"],
+      status: "Public",
+      github: "https://github.com/FrioNode/daily-basket",
     },
     {
-      title: "Discord Bot",
+      title: "School Portal",
       description:
-        "A Discord bot built with Node.js, Discord.js and MongoDB",
-      icon: <Bot className="h-12 w-12" />,
-      technologies: ["Discord.js", "Node.js", "MongoDB", "Discord API"],
-      github: "https://github.com/frionode/YouTify",
+        "A school operations portal: student and staff records, academics, and day-to-day administration in one place.",
+      icon: <GraduationCap className="h-12 w-12" />,
+      technologies: ["Node.js", "Express", "MongoDB", "EJS"],
+      status: "Private",
     },
   ];
 
   return (
     <section id="projects" className="mb-20">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-primary mb-4">Sample Projects</h2>
+        <h2 className="text-4xl font-bold text-primary mb-4">Projects</h2>
         <p className="text-muted-foreground text-lg">
-          Check out some of my recent work
+          What I'm building now, and what I've shipped
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <Card
-            key={index}
-            className="p-6 hover:shadow-portfolio-lg transition-all duration-300 hover:-translate-y-2"
+            key={project.title}
+            className="overflow-hidden hover:shadow-portfolio-lg transition-all duration-300 hover:-translate-y-2 flex flex-col"
           >
-            <div className="flex items-center justify-center h-32 bg-primary/10 rounded-lg mb-6 text-primary">
-              {project.icon}
-            </div>
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-44 object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex items-center justify-center h-44 bg-primary/10 text-primary">
+                {project.icon}
+              </div>
+            )}
 
-            <h3 className="text-xl font-semibold text-foreground mb-3">
-              {project.title}
-            </h3>
-            <p className="text-muted-foreground mb-4">{project.description}</p>
-
-            <div className="flex flex-wrap gap-2 mb-6">
-              {project.technologies.map((tech, techIndex) => (
+            <div className="p-6 flex flex-col flex-1">
+              <div className="flex items-start justify-between gap-2 mb-3">
+                <h3 className="text-xl font-semibold text-foreground">
+                  {project.title}
+                </h3>
                 <span
-                  key={techIndex}
-                  className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  className={
+                    project.status === "Private"
+                      ? "shrink-0 inline-flex items-center gap-1 px-2 py-1 bg-muted text-muted-foreground text-xs rounded-full"
+                      : "shrink-0 inline-flex items-center gap-1 px-2 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                  }
                 >
-                  {tech}
+                  {project.status === "Private" && <Lock className="h-3 w-3" />}
+                  {project.status}
                 </span>
-              ))}
-            </div>
+              </div>
 
-            <a href={project.github} target="_blank" rel="noopener noreferrer">
-              <Button className="w-full">View Project</Button>
-            </a>
+              {project.highlight && (
+                <p className="text-sm font-medium text-primary mb-2">
+                  {project.highlight}
+                </p>
+              )}
+
+              <p className="text-muted-foreground mb-4 flex-1">{project.description}</p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {project.github ? (
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full">
+                    <Github className="h-4 w-4 mr-2" /> View on GitHub
+                  </Button>
+                </a>
+              ) : (
+                <a href="mailto:frionode@gmail.com?subject=Private%20project%20—%20tell%20me%20more">
+                  <Button variant="outline" className="w-full">
+                    <Mail className="h-4 w-4 mr-2" /> Private — ask me about it
+                  </Button>
+                </a>
+              )}
+            </div>
           </Card>
         ))}
       </div>
+
+      <p className="text-center text-muted-foreground mt-10">
+        Some projects are private — contact me if you'd like a walkthrough
+        or a demo.
+      </p>
     </section>
   );
 };

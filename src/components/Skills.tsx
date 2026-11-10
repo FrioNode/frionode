@@ -11,6 +11,7 @@ import {
   TerminalSquare,
   Network,
   FileText,
+  CreditCard,
 } from "lucide-react";
 
 // Skill-to-icon mapping #Dev FrioNode
@@ -18,50 +19,77 @@ const skillIcons: Record<string, JSX.Element> = {
   "JavaScript (ES6+)": <FileCode className="h-4 w-4 text-primary" />,
   TypeScript: <FileCode className="h-4 w-4 text-primary" />,
   "React.js": <Globe className="h-4 w-4 text-primary" />,
+  "Next.js": <Globe className="h-4 w-4 text-primary" />,
   HTML5: <FileText className="h-4 w-4 text-primary" />,
   CSS3: <FileText className="h-4 w-4 text-primary" />,
   "Tailwind CSS": <Settings className="h-4 w-4 text-primary" />,
 
   "Node.js": <Server className="h-4 w-4 text-primary" />,
+  Go: <Server className="h-4 w-4 text-primary" />,
+  Python: <FileCode className="h-4 w-4 text-primary" />,
   "Express.js": <Server className="h-4 w-4 text-primary" />,
+  FastAPI: <Server className="h-4 w-4 text-primary" />,
   "RESTful APIs": <Network className="h-4 w-4 text-primary" />,
   GraphQL: <Cloud className="h-4 w-4 text-primary" />,
 
+  PostgreSQL: <Database className="h-4 w-4 text-primary" />,
   MongoDB: <Database className="h-4 w-4 text-primary" />,
   MySQL: <Database className="h-4 w-4 text-primary" />,
+  Redis: <Database className="h-4 w-4 text-primary" />,
   Git: <GitBranch className="h-4 w-4 text-primary" />,
   GitHub: <GitBranch className="h-4 w-4 text-primary" />,
   Linux: <TerminalSquare className="h-4 w-4 text-primary" />,
+
+  "M-Pesa (STK + B2C)": <CreditCard className="h-4 w-4 text-primary" />,
+  "Double-entry ledgers": <CreditCard className="h-4 w-4 text-primary" />,
+  Docker: <Cloud className="h-4 w-4 text-primary" />,
+  "Fly.io": <Cloud className="h-4 w-4 text-primary" />,
+  "Telegram APIs": <Network className="h-4 w-4 text-primary" />,
 };
 
 export const Skills = () => {
   const skillCategories = [
-    {
-      title: "Frontend Development",
-      icon: <Globe className="h-6 w-6" />,
-      skills: [
-        "JavaScript (ES6+)",
-        "React.js",
-        "HTML5",
-        "CSS3",
-        "Tailwind CSS",
-      ],
-    },
     {
       title: "Backend Development",
       icon: <Server className="h-6 w-6" />,
       skills: [
         "Node.js",
         "TypeScript",
+        "Go",
+        "Python",
         "Express.js",
+        "FastAPI",
         "RESTful APIs",
         "GraphQL",
       ],
     },
     {
-      title: "Database & Tools",
+      title: "Frontend Development",
+      icon: <Globe className="h-6 w-6" />,
+      skills: [
+        "JavaScript (ES6+)",
+        "React.js",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+      ],
+    },
+    {
+      title: "Databases & Tools",
       icon: <Database className="h-6 w-6" />,
-      skills: ["MongoDB", "MySQL", "Git", "GitHub", "Linux"],
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Git", "GitHub", "Linux"],
+    },
+    {
+      title: "Payments & DevOps",
+      icon: <CreditCard className="h-6 w-6" />,
+      skills: [
+        "M-Pesa (STK + B2C)",
+        "Double-entry ledgers",
+        "Docker",
+        "Fly.io",
+        "Telegram APIs",
+      ],
     },
   ];
 
@@ -70,11 +98,11 @@ export const Skills = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-primary mb-4">Technical Skills</h2>
         <p className="text-muted-foreground text-lg">
-          Technologies and tools I use to create amazing applications
+          Technologies and tools I use to build and ship real systems
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {skillCategories.map((category, index) => (
           <Card
             key={index}

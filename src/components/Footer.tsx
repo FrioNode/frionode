@@ -42,8 +42,8 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-card border-t border-border py-4">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 px-4 text-sm text-muted-foreground">
+    <footer className="fixed bottom-0 left-0 right-0 z-50 w-full bg-card border-t border-border py-2 sm:py-0 sm:h-14 sm:flex sm:items-center">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 px-4 w-full text-sm text-muted-foreground">
         <span className="font-bold text-primary text-base shrink-0">FrioNode</span>
         <span className="flex items-center gap-3 shrink-0">
           {socials.map((social) => (

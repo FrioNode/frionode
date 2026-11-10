@@ -13,7 +13,6 @@ import {
   Captions,
   Smartphone,
   FolderKanban,
-  Bot,
 } from "lucide-react";
 
 type Project = {
@@ -93,13 +92,12 @@ export const Projects = () => {
       github: "https://github.com/United-DG/vscribe",
     },
     {
-      title: "cloudtext2",
+      title: "cloudtext",
       description:
-        "An SMS gateway — turn any Android phone into an SMS gateway.",
+        "An SMS gateway — turn any Android phone into an SMS gateway. Send and receive SMS through your own SIM, with a web dashboard, REST API and MCP server for AI agents — no per-message fees.",
       icon: <Smartphone className="h-12 w-12" />,
       technologies: ["TypeScript", "Android", "SMS"],
-      status: "Public",
-      github: "https://github.com/United-DG/cloudtext2",
+      status: "Private",
     },
     {
       title: "dev-command-centre",
@@ -109,15 +107,6 @@ export const Projects = () => {
       technologies: ["JavaScript", "Self-hosted"],
       status: "Public",
       github: "https://github.com/United-DG/dev-command-centre",
-    },
-    {
-      title: "luna_connect",
-      description:
-        "Pairing for the Luna bot.",
-      icon: <Bot className="h-12 w-12" />,
-      technologies: ["JavaScript", "WhatsApp"],
-      status: "Public",
-      github: "https://github.com/FrioNode/luna_connect",
     },
   ];
 

@@ -106,9 +106,8 @@ const frionode = {
 | 🧺 **Daily Basket** *(private — ask me about it)* | Offline shop ledger — sales, debts, suppliers, margins (Android) | `Kotlin` `Jetpack Compose` `SQLite` |
 | 🏫 **School Portal** *(private — ask me about it)* | School operations: students, staff, academics | `Node.js` `Express` `MongoDB` `EJS` |
 | 🎙️ **[vscribe](https://github.com/United-DG/vscribe)** *(public)* | Video transcription API — speech to text from virtually any video source | `TypeScript` `REST API` |
-| 📱 **[cloudtext2](https://github.com/United-DG/cloudtext2)** *(public)* | SMS gateway — turn any Android phone into an SMS gateway | `TypeScript` `Android` `SMS` |
+| 📱 **cloudtext** *(private — ask me about it)* | SMS gateway — turn any Android phone into an SMS gateway | `TypeScript` `Android` `SMS` |
 | 🗂️ **[dev-command-centre](https://github.com/United-DG/dev-command-centre)** *(public)* | Self-hosted multi-project tracker | `JavaScript` |
-| 🤖 **[luna_connect](https://github.com/FrioNode/luna_connect)** *(public)* | Pairing for the Luna bot | `JavaScript` `WhatsApp` |
 
 > Some projects are private — contact me at frionode@frionode.online if you'd like a walkthrough or a demo.
 

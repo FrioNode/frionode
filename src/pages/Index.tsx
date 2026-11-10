@@ -20,7 +20,7 @@ const Index = () => {
 
         {/* Main Content — full width from the sidebar to the right edge */}
         <div className="flex-1 flex flex-col min-w-0">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 pt-8 flex-1">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 pt-8 pb-28 sm:pb-20 flex-1">
             <main>
               <Hero />
               <About />
@@ -32,7 +32,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Footer spans the full width, below sidebar and main content */}
+      {/* Fixed footer — always visible at the bottom of the viewport */}
       <Footer />
     </div>
   );

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0f2438"/>
+  <circle cx="670" cy="100" r="90" fill="#14b8a6" opacity="0.16"/>
+  <circle cx="110" cy="310" r="60" fill="#1d4a63"/>
+  <!-- dashboard window -->
+  <rect x="110" y="70" width="580" height="260" rx="16" fill="#e8f1f8"/>
+  <rect x="110" y="70" width="580" height="40" rx="16" fill="#14b8a6"/>
+  <rect x="110" y="94" width="580" height="16" fill="#14b8a6"/>
+  <circle cx="140" cy="90" r="8" fill="#ff6968"/>
+  <circle cx="164" cy="90" r="8" fill="#f59e0b"/>
+  <circle cx="188" cy="90" r="8" fill="#5eead4"/>
+  <!-- kanban columns -->
+  <rect x="135" y="130" width="160" height="180" rx="10" fill="#102a43" opacity="0.08"/>
+  <rect x="320" y="130" width="160" height="180" rx="10" fill="#102a43" opacity="0.08"/>
+  <rect x="505" y="130" width="160" height="180" rx="10" fill="#102a43" opacity="0.08"/>
+  <rect x="147" y="142" width="136" height="34" rx="8" fill="#14b8a6"/>
+  <rect x="147" y="186" width="136" height="34" rx="8" fill="#5eead4"/>
+  <rect x="147" y="230" width="136" height="34" rx="8" fill="#ff6968" opacity="0.85"/>
+  <rect x="332" y="142" width="136" height="34" rx="8" fill="#5eead4"/>
+  <rect x="332" y="186" width="136" height="34" rx="8" fill="#14b8a6"/>
+  <rect x="332" y="230" width="136" height="34" rx="8" fill="#e8f1f8"/>
+  <rect x="517" y="142" width="136" height="34" rx="8" fill="#ff6968"/>
+  <rect x="517" y="186" width="136" height="34" rx="8" fill="#f59e0b"/>
+  <rect x="517" y="230" width="136" height="34" rx="8" fill="#5eead4" opacity="0.7"/>
+  <!-- chart bars below -->
+  <rect x="135" y="345" width="26" height="30" rx="4" fill="#14b8a6"/>
+  <rect x="175" y="330" width="26" height="45" rx="4" fill="#5eead4"/>
+  <rect x="215" y="315" width="26" height="60" rx="4" fill="#14b8a6"/>
+  <rect x="255" y="340" width="26" height="35" rx="4" fill="#ff6968"/>
+  <rect x="620" y="345" width="26" height="30" rx="4" fill="#5eead4"/>
+  <rect x="660" y="325" width="26" height="50" rx="4" fill="#14b8a6"/>
+</svg>

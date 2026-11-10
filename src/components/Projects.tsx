@@ -70,6 +70,7 @@ export const Projects = () => {
       title: "Daily Basket",
       description:
         "An offline shop ledger for a small retail business — sales, debts, suppliers and per-product margins — as a native Android app. No permissions at all, not even internet; everything lives in one SQLite database on the phone.",
+      image: "/images/project-daily-basket.svg",
       icon: <ShoppingBasket className="h-12 w-12" />,
       technologies: ["Kotlin", "Jetpack Compose", "SQLite", "Android"],
       status: "Private",
@@ -78,6 +79,7 @@ export const Projects = () => {
       title: "School Portal",
       description:
         "A school operations portal: student and staff records, academics, and day-to-day administration in one place.",
+      image: "/images/project-school-portal.svg",
       icon: <GraduationCap className="h-12 w-12" />,
       technologies: ["Node.js", "Express", "MongoDB", "EJS"],
       status: "Private",
@@ -86,6 +88,7 @@ export const Projects = () => {
       title: "vscribe",
       description:
         "A video transcription API that converts speech to text from virtually any video source.",
+      image: "/images/project-vscribe.svg",
       icon: <Captions className="h-12 w-12" />,
       technologies: ["TypeScript", "REST API", "Speech-to-text"],
       status: "Public",
@@ -95,6 +98,7 @@ export const Projects = () => {
       title: "cloudtext",
       description:
         "An SMS gateway — turn any Android phone into an SMS gateway. Send and receive SMS through your own SIM, with a web dashboard, REST API and MCP server for AI agents — no per-message fees.",
+      image: "/images/project-cloudtext.svg",
       icon: <Smartphone className="h-12 w-12" />,
       technologies: ["TypeScript", "Android", "SMS"],
       status: "Private",
@@ -103,6 +107,7 @@ export const Projects = () => {
       title: "dev-command-centre",
       description:
         "A self-hosted multi-project tracker for people who code on several things at once and refuse to manually log progress.",
+      image: "/images/project-dev-command-centre.svg",
       icon: <FolderKanban className="h-12 w-12" />,
       technologies: ["JavaScript", "Self-hosted"],
       status: "Public",

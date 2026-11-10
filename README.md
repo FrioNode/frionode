@@ -101,9 +101,9 @@ const frionode = {
 |---|---|---|
 | 💳 **PAL** *(private — ask me about it)* | Payment platform: double-entry ledger, wallets, M-Pesa rails | `Go` `PostgreSQL` `M-Pesa` |
 | 💬 **ARC CRM** *(private — ask me about it)* | Telegram-integrated web CRM: operators, shared lead pool, payments ledger | `TypeScript` `Next.js` `PostgreSQL` `Telegram API` |
-| 📦 **[Inventory Management System](https://github.com/United-DG/IMS)** | Real-time inventory with team collaboration | `Node.js` `Express` `SQL` `Socket.io` `Redis` |
-| 🏥 **[PulseHQ](https://github.com/United-DG/pulsehq)** | Hospital operations dashboard: patients, beds, billing, pharmacy | `Next.js 15` `React 19` `TypeScript` `Tailwind` |
-| 🧺 **[Daily Basket](https://github.com/FrioNode/daily-basket)** | Offline shop ledger — sales, debts, suppliers, margins (Android) | `Kotlin` `Jetpack Compose` `SQLite` |
+| 📦 **Inventory Management System** *(private — ask me about it)* | Real-time inventory with team collaboration | `Node.js` `Express` `SQL` `Socket.io` `Redis` |
+| 🏥 **PulseHQ** *(private — ask me about it)* | Hospital operations dashboard: patients, beds, billing, pharmacy | `Next.js 15` `React 19` `TypeScript` `Tailwind` |
+| 🧺 **Daily Basket** *(private — ask me about it)* | Offline shop ledger — sales, debts, suppliers, margins (Android) | `Kotlin` `Jetpack Compose` `SQLite` |
 | 🏫 **School Portal** *(private — ask me about it)* | School operations: students, staff, academics | `Node.js` `Express` `MongoDB` `EJS` |
 
 > Some projects are private — contact me at frionode@gmail.com if you'd like a walkthrough or a demo.

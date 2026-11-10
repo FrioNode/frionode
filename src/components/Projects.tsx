@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CreditCard, MessageSquare, Boxes, HeartPulse, ShoppingBasket, GraduationCap, Lock, Github, Mail } from "lucide-react";
+import { CreditCard, MessageSquare, Boxes, HeartPulse, ShoppingBasket, GraduationCap, Lock, Mail } from "lucide-react";
 
 type Project = {
   title: string;
@@ -9,7 +9,6 @@ type Project = {
   icon: JSX.Element;
   technologies: string[];
   status: "Private" | "Public";
-  github?: string;
   highlight?: string;
 };
 
@@ -42,8 +41,7 @@ export const Projects = () => {
       image: "/images/project-ims.png",
       icon: <Boxes className="h-12 w-12" />,
       technologies: ["Node.js", "Express", "SQL", "Socket.io", "Redis"],
-      status: "Public",
-      github: "https://github.com/United-DG/IMS",
+      status: "Private",
     },
     {
       title: "PulseHQ — Hospital Operations",
@@ -52,8 +50,7 @@ export const Projects = () => {
       image: "/images/project-pulsehq.png",
       icon: <HeartPulse className="h-12 w-12" />,
       technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS"],
-      status: "Public",
-      github: "https://github.com/United-DG/pulsehq",
+      status: "Private",
     },
     {
       title: "Daily Basket",
@@ -61,8 +58,7 @@ export const Projects = () => {
         "An offline shop ledger for a small retail business — sales, debts, suppliers and per-product margins — as a native Android app. No permissions at all, not even internet; everything lives in one SQLite database on the phone.",
       icon: <ShoppingBasket className="h-12 w-12" />,
       technologies: ["Kotlin", "Jetpack Compose", "SQLite", "Android"],
-      status: "Public",
-      github: "https://github.com/FrioNode/daily-basket",
+      status: "Private",
     },
     {
       title: "School Portal",
@@ -138,19 +134,11 @@ export const Projects = () => {
                 ))}
               </div>
 
-              {project.github ? (
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full">
-                    <Github className="h-4 w-4 mr-2" /> View on GitHub
-                  </Button>
-                </a>
-              ) : (
-                <a href="mailto:frionode@gmail.com?subject=Private%20project%20—%20tell%20me%20more">
-                  <Button variant="outline" className="w-full">
-                    <Mail className="h-4 w-4 mr-2" /> Private — ask me about it
-                  </Button>
-                </a>
-              )}
+              <a href="mailto:frionode@gmail.com?subject=Private%20project%20—%20tell%20me%20more">
+                <Button variant="outline" className="w-full">
+                  <Mail className="h-4 w-4 mr-2" /> Private — ask me about it
+                </Button>
+              </a>
             </div>
           </Card>
         ))}

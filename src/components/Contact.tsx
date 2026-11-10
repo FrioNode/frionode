@@ -5,7 +5,6 @@ import {
   Globe,
   Github,
   Twitter,
-  Clock,
   Instagram,
   Facebook,
   Youtube,
@@ -69,12 +68,6 @@ export const Contact = () => {
       value: "Kenya — working remotely",
       href: undefined,
     },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      label: "Response time",
-      value: "Usually within a day",
-      href: undefined,
-    },
   ];
 
   return (
@@ -87,7 +80,7 @@ export const Contact = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {channels.map((channel) => (
           <Card key={channel.label} className="p-5">
             <div className="flex items-center gap-4">

@@ -23,11 +23,14 @@ const skillIcons: Record<string, JSX.Element> = {
   HTML5: <FileText className="h-4 w-4 text-primary" />,
   CSS3: <FileText className="h-4 w-4 text-primary" />,
   "Tailwind CSS": <Settings className="h-4 w-4 text-primary" />,
+  "shadcn/ui": <Code className="h-4 w-4 text-primary" />,
+  "React Router": <Globe className="h-4 w-4 text-primary" />,
 
   "Node.js": <Server className="h-4 w-4 text-primary" />,
   Go: <Server className="h-4 w-4 text-primary" />,
   Python: <FileCode className="h-4 w-4 text-primary" />,
   "Express.js": <Server className="h-4 w-4 text-primary" />,
+  Fastify: <Server className="h-4 w-4 text-primary" />,
   FastAPI: <Server className="h-4 w-4 text-primary" />,
   "RESTful APIs": <Network className="h-4 w-4 text-primary" />,
   GraphQL: <Cloud className="h-4 w-4 text-primary" />,
@@ -44,6 +47,7 @@ const skillIcons: Record<string, JSX.Element> = {
   "Double-entry ledgers": <CreditCard className="h-4 w-4 text-primary" />,
   Docker: <Cloud className="h-4 w-4 text-primary" />,
   "Fly.io": <Cloud className="h-4 w-4 text-primary" />,
+  Caddy: <Cloud className="h-4 w-4 text-primary" />,
   "Telegram APIs": <Network className="h-4 w-4 text-primary" />,
 };
 
@@ -60,6 +64,8 @@ export const Skills = () => {
         "HTML5",
         "CSS3",
         "Tailwind CSS",
+        "shadcn/ui",
+        "React Router",
         "RESTful APIs",
       ],
     },
@@ -72,6 +78,7 @@ export const Skills = () => {
         "Python",
         "Express.js",
         "FastAPI",
+        "Fastify",
         "GraphQL",
         "Git",
         "GitHub",
@@ -91,6 +98,7 @@ export const Skills = () => {
         "Redis",
         "Docker",
         "Fly.io",
+        "Caddy",
       ],
     },
   ];
@@ -104,7 +112,7 @@ export const Skills = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         {skillCategories.map((category, index) => (
           <Card
             key={index}
@@ -117,14 +125,16 @@ export const Skills = () => {
               </h3>
             </div>
 
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-3">
               {category.skills.map((skill, skillIndex) => (
                 <li
                   key={skillIndex}
-                  className="flex items-center gap-3 p-2 rounded-md hover:bg-hover transition-colors"
+                  className="flex items-center gap-2 p-2 rounded-md hover:bg-hover transition-colors"
                 >
-                  {skillIcons[skill] ?? <Code className="h-4 w-4 text-primary" />}
-                  <span className="text-muted-foreground">{skill}</span>
+                  <span className="shrink-0">
+                    {skillIcons[skill] ?? <Code className="h-4 w-4 text-primary" />}
+                  </span>
+                  <span className="text-muted-foreground text-sm leading-snug">{skill}</span>
                 </li>
               ))}
             </ul>

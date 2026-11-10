@@ -34,7 +34,7 @@ const timelineEvents: TimelineEvent[] = [
 
 export const Timeline = () => {
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 lg:self-start bg-card border-r border-border sticky top-0 max-h-screen overflow-y-auto">
+    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 bg-card border-r border-border lg:sticky lg:top-16 lg:z-10 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto">
       <div className="px-5 pt-6 pb-4 border-b border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">My journey</p>
         <h2 className="text-lg font-bold text-foreground mt-1">Backend, payments & automation</h2>

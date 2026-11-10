@@ -15,8 +15,8 @@ const Index = () => {
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col min-w-0">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 w-full">
-          <Header />
+        <Header />
+        <div className="max-w-6xl mx-auto px-4 md:px-8 w-full pt-8">
           <main>
             <Hero />
             <About />

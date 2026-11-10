@@ -63,3 +63,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Keep anchored sections visible below the sticky header */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}

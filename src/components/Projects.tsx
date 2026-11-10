@@ -75,7 +75,7 @@ export const Projects = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-primary mb-4">Projects</h2>
         <p className="text-muted-foreground text-lg">
-          What I'm building now, and what I've shipped
+          What I&apos;m building now, and what I&apos;ve shipped
         </p>
       </div>
 
@@ -134,7 +134,7 @@ export const Projects = () => {
                 ))}
               </div>
 
-              <a href="mailto:frionode@gmail.com?subject=Private%20project%20—%20tell%20me%20more">
+              <a href={`mailto:frionode@gmail.com?subject=${encodeURIComponent(`Private project: ${project.title}`)}`}>
                 <Button variant="outline" className="w-full">
                   <Mail className="h-4 w-4 mr-2" /> Private — ask me about it
                 </Button>
@@ -145,7 +145,7 @@ export const Projects = () => {
       </div>
 
       <p className="text-center text-muted-foreground mt-10">
-        Some projects are private — contact me if you'd like a walkthrough
+        Some projects are private — contact me if you&apos;d like a walkthrough
         or a demo.
       </p>
     </section>

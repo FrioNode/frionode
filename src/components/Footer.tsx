@@ -67,6 +67,15 @@ export const Footer = () => {
           ))}
         </div>
 
+        <p className="mb-2">
+          <a
+            href="mailto:frionode@gmail.com"
+            className="text-muted-foreground hover:text-primary transition"
+          >
+            frionode@gmail.com
+          </a>
+        </p>
+
         <p className="text-muted-foreground">
           © 2026 FrioNode Portfolio. All rights reserved.
         </p>

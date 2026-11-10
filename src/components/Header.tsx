@@ -1,52 +1,90 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu, X } from "lucide-react";
+
+const navLinks = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 
 export const Header = () => {
   const [isDark, setIsDark] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
       setIsDark(true);
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
-    
+
     if (newTheme) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   };
 
   return (
-    <header className="flex justify-between items-center py-6 mb-8">
-      <div className="text-2xl font-bold text-primary">FrioNode</div>
-      
-      <nav className="hidden md:flex space-x-8">
-        <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">About</a>
-        <a href="#skills" className="text-foreground hover:text-primary transition-colors font-medium">Skills</a>
-        <a href="#projects" className="text-foreground hover:text-primary transition-colors font-medium">Projects</a>
-        <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Contact</a>
-      </nav>
-      
-      <Button 
-        variant="outline" 
-        size="sm" 
-        onClick={toggleTheme}
-        className="transition-transform hover:scale-110"
-      >
-        {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-      </Button>
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 w-full flex justify-between items-center h-16">
+        <a href="#" className="text-2xl font-bold text-primary">FrioNode</a>
+
+        <nav className="hidden md:flex space-x-8">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="text-foreground hover:text-primary transition-colors font-medium">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={toggleTheme}
+            className="transition-transform hover:scale-110"
+            aria-label="Toggle theme"
+          >
+            {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setMenuOpen((v) => !v)}
+            className="md:hidden"
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+          </Button>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <nav className="md:hidden border-t border-border bg-background px-4 py-2">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="block py-3 text-foreground hover:text-primary transition-colors font-medium border-b border-border last:border-b-0"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   );
 };

@@ -1,3 +1,5 @@
+import { MapPin, Mail } from "lucide-react";
+
 interface TimelineEvent {
   period: string;
   description: string;
@@ -32,28 +34,38 @@ const timelineEvents: TimelineEvent[] = [
 
 export const Timeline = () => {
   return (
-    <aside className="hidden lg:block w-1/5 min-w-[320px] bg-timeline-bg border-r border-border overflow-y-auto sticky top-0 h-screen">
-      <div className="p-6">
+    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 xl:w-80 bg-muted/50 border-r border-border sticky top-0 h-screen overflow-y-auto">
+      <div className="px-5 pt-6 pb-4 border-b border-border">
+        <p className="text-xs font-semibold uppercase tracking-widest text-primary">My journey</p>
+        <h2 className="text-lg font-bold text-foreground mt-1">Backend, payments & automation</h2>
+        <p className="text-sm text-muted-foreground mt-1">7+ years shipping real systems.</p>
+      </div>
+
+      <div className="flex-1 px-5 py-6">
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-5 top-4 bottom-0 w-1 bg-timeline-line rounded-full"></div>
+          <div className="absolute left-4 top-2 bottom-2 w-px bg-border"></div>
 
-          {/* Timeline events - More spaced out */}
-          <div className="space-y-12">
+          <div className="space-y-7">
             {timelineEvents.map((event, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative pl-10">
                 {/* Timeline dot */}
-                <div className="absolute left-3 w-4 h-4 bg-card border-3 border-timeline-line rounded-full z-10"></div>
-
-                {/* Simple event content - no fancy cards */}
-                <div className="ml-10 p-3 bg-card rounded-lg shadow-sm">
-                  <div className="text-sm font-bold text-primary mb-1">{event.period}</div>
-                  <div className="text-sm text-muted-foreground">{event.description}</div>
-                </div>
+                <div className="absolute left-2 top-1 w-4 h-4 bg-background border-2 border-primary rounded-full"></div>
+                <div className="text-xs font-bold text-primary">{event.period}</div>
+                <div className="text-sm leading-relaxed text-muted-foreground mt-0.5">{event.description}</div>
               </div>
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="px-5 py-4 border-t border-border space-y-2 text-sm text-muted-foreground">
+        <p className="flex items-center gap-2">
+          <MapPin className="h-4 w-4 shrink-0 text-primary" /> Kenya — working remotely
+        </p>
+        <a href="mailto:frionode@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors break-all">
+          <Mail className="h-4 w-4 shrink-0 text-primary" /> frionode@gmail.com
+        </a>
       </div>
     </aside>
   );

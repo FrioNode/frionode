@@ -50,20 +50,6 @@ const skillIcons: Record<string, JSX.Element> = {
 export const Skills = () => {
   const skillCategories = [
     {
-      title: "Backend Development",
-      icon: <Server className="h-6 w-6" />,
-      skills: [
-        "Node.js",
-        "TypeScript",
-        "Go",
-        "Python",
-        "Express.js",
-        "FastAPI",
-        "RESTful APIs",
-        "GraphQL",
-      ],
-    },
-    {
       title: "Frontend Development",
       icon: <Globe className="h-6 w-6" />,
       skills: [
@@ -76,19 +62,35 @@ export const Skills = () => {
       ],
     },
     {
-      title: "Databases & Tools",
-      icon: <Database className="h-6 w-6" />,
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Git", "GitHub", "Linux"],
+      title: "Backend & Tools",
+      icon: <Server className="h-6 w-6" />,
+      skills: [
+        "Node.js",
+        "TypeScript",
+        "Go",
+        "Python",
+        "Express.js",
+        "FastAPI",
+        "RESTful APIs",
+        "GraphQL",
+        "Git",
+        "GitHub",
+        "Linux",
+      ],
     },
     {
-      title: "Payments & DevOps",
+      title: "Payments, Data & DevOps",
       icon: <CreditCard className="h-6 w-6" />,
       skills: [
         "M-Pesa (STK + B2C)",
         "Double-entry ledgers",
+        "Telegram APIs",
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Redis",
         "Docker",
         "Fly.io",
-        "Telegram APIs",
       ],
     },
   ];
@@ -102,7 +104,7 @@ export const Skills = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillCategories.map((category, index) => (
           <Card
             key={index}

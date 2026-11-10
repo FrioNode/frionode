@@ -86,9 +86,9 @@ export const Contact = () => {
         <Card className="p-8">
           <h3 className="text-2xl font-semibold text-foreground mb-4">Contact Info</h3>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            I'm open to freelance work, collaborations, and questions about
-            my projects — including the private ones. Tell me what you're
-            building and I'll get back to you.
+            I&apos;m open to freelance work, collaborations, and questions about
+            my projects — including the private ones. Tell me what you&apos;re
+            building and I&apos;ll get back to you.
           </p>
 
           <div className="space-y-6">
@@ -142,14 +142,19 @@ export const Contact = () => {
           method="POST"
           className="space-y-6"
         >
+          <input type="hidden" name="_subject" value="New message from frionode.online" />
+          <input type="hidden" name="_next" value="https://frionode.online/#contact" />
           <Input name="name" placeholder="Your Name" className="h-12" required />
-          <Input name="email" type="email" placeholder="Your Email" className="h-12" required />
+          <Input name="_replyto" type="email" placeholder="Your Email" className="h-12" required />
           <Input name="subject" placeholder="Subject" className="h-12" />
           <Textarea name="message" placeholder="Your Message" className="min-h-32 resize-none" required />
 
           <Button type="submit" className="w-full h-12 shadow-glow hover:shadow-portfolio-lg transition-all duration-300">
             Send Message
           </Button>
+          <p className="text-sm text-muted-foreground text-center">
+            Replies go straight to frionode@gmail.com
+          </p>
         </form>
       </div>
     </section>

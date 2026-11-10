@@ -34,19 +34,19 @@ const timelineEvents: TimelineEvent[] = [
 
 export const Timeline = () => {
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 bg-card border-r border-border lg:sticky lg:top-16 lg:z-10 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto">
-      <div className="px-5 pt-6 pb-4 border-b border-border">
+    <aside className="hidden lg:flex lg:flex-col lg:shrink-0 lg:w-72 lg:self-start bg-card border-r border-border lg:sticky lg:top-16 lg:z-10 lg:max-h-[calc(100vh-4rem)] lg:overflow-y-auto">
+      <div className="px-5 pt-5 pb-3 border-b border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">My journey</p>
         <h2 className="text-lg font-bold text-foreground mt-1">Backend, payments & automation</h2>
         <p className="text-sm text-muted-foreground mt-1">7+ years shipping real systems.</p>
       </div>
 
-      <div className="px-5 py-6">
+      <div className="px-5 py-5">
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-4 top-2 bottom-2 w-px bg-border"></div>
 
-          <div className="space-y-7">
+          <div className="space-y-6">
             {timelineEvents.map((event, index) => (
               <div key={index} className="relative pl-10">
                 {/* Timeline dot */}
